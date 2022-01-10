@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+/* Color */
+.tomato {
+  color: tomato;
+}
+/*Footer*/
+footer {
+  margin-bottom: 0;
+}
+.footer {
+  color: rosybrown;
+  text-align: center;
+}
+.footer h1 {
+  font-family: cursive;
+}
