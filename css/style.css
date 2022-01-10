@@ -1,18 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
 }
 /* Color */
 .tomato {
   color: tomato;
 }
+body {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+  color: aliceblue;
+}
+
+/* nav */
+nav {
+  background-color: rgba(32, 24, 32, 0.712);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+nav div.logo {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+
+nav div.logo img {
+  height: 50px;
+  margin: 10px 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+}
+nav li {
+  list-style: none;
+  padding: 10px 20px;
+}
+nav li:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+}
+.fas {
+  font-size: 30px;
+  padding: 0 5px;
+}
+
+/* main */
+section {
+  width: 100%;
+  height: 100vh;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin: 0 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container header h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid violet;
+  margin-bottom: 10px;
+}
+.half-width {
+  width: 45%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.half-width img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.left {
+  position: relative;
+  overflow: hidden;
+}
+.half-width.left:hover img {
+  opacity: 0.2;
+}
+.half-width.left:hover .img-text {
+  opacity: 1;
+}
+.half-width.left:hover .border-top {
+  left: 10px;
+}
+.half-width.left:hover .border-bottom {
+  right: 10px;
+}
+.half-width.left:hover .border-left {
+  bottom: 10px;
+}
+.half-width.left:hover .border-right {
+  top: 10px;
+}
+.border-top {
+  width: 95.5%;
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  border-top: violet 12px solid;
+  transition: 0.3s linear;
+}
+.border-bottom {
+  width: 95.5%;
+  position: absolute;
+  bottom: 10px;
+  right: 100%;
+  border-bottom: violet 12px solid;
+  transition: 0.3s linear;
+}
+.border-left {
+  height: 95.5%;
+  position: absolute;
+  left: 10px;
+  bottom: 100%;
+  border-left: violet 12px solid;
+  transition: 0.3s linear;
+}
+.border-right {
+  height: 95.5%;
+  top: 100%;
+  position: absolute;
+  right: 10px;
+  border-right: violet 12px solid;
+  transition: 0.3s linear;
+}
+.img-text {
+  position: absolute;
+  bottom: 40px;
+  color: tomato;
+  opacity: 0;
+}
+
+.container > main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.my-self header h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+  border-bottom: 2px solid purple;
+  margin-bottom: 5%;
+}
+.my-self p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+/* table */
+.education {
+  width: 100%;
+
+  align-items: center;
+}
+table {
+  width: 90%;
+  margin: 50px auto 0;
+
+  border: 2px solid purple;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding: 10px 10px;
+  text-align: center;
+  border: 2px solid purple;
+}
+
 /*Footer*/
 footer {
+  background-color: rgba(32, 24, 32, 0.712);
   margin-bottom: 0;
 }
 .footer {
@@ -21,4 +209,8 @@ footer {
 }
 .footer h1 {
   font-family: cursive;
+}
+.footer div {
+  display: block;
+  margin: 10px 0;
 }
